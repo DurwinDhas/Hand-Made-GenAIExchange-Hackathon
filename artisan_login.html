@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hand Made - Artisan Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Hand Made</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artisan_login.html">Artisan Login</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="login-section" class="homely-section">
+        <div class="container">
+          <h2>Artisan Login / Register</h2>
+          <div class="login-form-container">
+            <form id="artisanLoginForm">
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <button type="submit" class="button-primary">Login</button>
+              <p class="signup-link">
+                Don't have an account? <a href="#">Register Here</a>
+              </p>
+            </form>
+
+            <div id="upload-tool" style="display: none">
+              <h3>Upload Your Craft</h3>
+              <input
+                type="file"
+                id="craftFileUpload"
+                accept="image/*,video/*"
+                multiple
+              />
+              <button id="processCraftButton">Generate Story with AI</button>
+              <div id="generatedContent">
+                <h4>Generated Heading:</h4>
+                <p id="aiHeading"></p>
+                <h4>Generated Story:</h4>
+                <p id="aiStory"></p>
+                <h4>Generated Tags:</h4>
+                <p id="aiTags"></p>
+                <button id="publishBlogButton">Publish Blog Post</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Hand Made. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

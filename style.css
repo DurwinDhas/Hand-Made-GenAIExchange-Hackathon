@@ -1,0 +1,474 @@
+/* General Body and Container */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4ed; /* A warm, homely background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #7a4a2c; /* Deep, earthy tone */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif; /* A more elegant font for the title */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700; /* Gold accent on hover */
+}
+
+/* Homely Sections */
+.homely-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff; /* White background for content */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.homely-section h2, .homely-section h3 {
+    color: #5a3e2a; /* Rich brown for headings */
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.homely-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('images/hero-bg.jpg') no-repeat center center/cover; /* Add a placeholder background image */
+    color: #333;
+    padding: 100px 0;
+    border-radius: 0; /* No border radius for hero to stretch full width */
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+
+#hero h2 {
+    font-size: 3.5em;
+    color: #7a4a2c;
+}
+
+.button-primary {
+    background-color: #a06e4e; /* A softer, inviting button color */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: #7a4a2c;
+}
+
+/* Featured Crafts */
+.craft-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.craft-item {
+    background-color: #fdfaf5; /* Slightly off-white for individual items */
+    border: 1px solid #e0d9cc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.craft-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.craft-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.craft-item h4 {
+    color: #7a4a2c;
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.craft-item p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.craft-item .view-details {
+    display: inline-block;
+    background-color: #a06e4e;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.craft-item .view-details:hover {
+    background-color: #7a4a2c;
+}
+
+/* How It Works Section */
+#how-it-works .steps {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.step-item {
+    flex: 1;
+    min-width: 280px;
+    background-color: #fdfaf5;
+    border: 1px dashed #d1c6b3; /* Dashed border for a handcrafted feel */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    text-align: center;
+}
+
+.step-item h4 {
+    color: #7a4a2c;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Login Form */
+.login-form-container {
+    max-width: 450px;
+    margin: 40px auto;
+    background-color: #fdfaf5;
+    border: 1px solid #e0d9cc;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #5a3e2a;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid #d1c6b3;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #a06e4e;
+    outline: none;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.signup-link a {
+    color: #a06e4e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Upload Tool */
+#upload-tool {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px dashed #d1c6b3;
+    text-align: center;
+}
+
+#upload-tool h3 {
+    color: #5a3e2a;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 25px;
+}
+
+#craftFileUpload {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 2px dashed #a06e4e;
+    border-radius: 8px;
+    background-color: #fdfaf5;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #7a4a2c;
+}
+
+#craftFileUpload::file-selector-button {
+    background-color: #a06e4e;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#craftFileUpload::file-selector-button:hover {
+    background-color: #7a4a2c;
+}
+
+#generatedContent {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #fdfaf5;
+    border: 1px solid #e0d9cc;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+#generatedContent h4 {
+    color: #7a4a2c;
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+#generatedContent p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    min-height: 40px; /* Ensure visibility even if content is short */
+}
+
+/* Help Page */
+.faq-section {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.faq-section h3 {
+    color: #5a3e2a;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq-item {
+    background-color: #fdfaf5;
+    border: 1px solid #e0d9cc;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.faq-item h4 {
+    color: #7a4a2c;
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer; /* Indicate it's clickable for potential accordion */
+}
+
+.faq-item p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+.faq-item a {
+    color: #a06e4e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-section {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #d1c6b3;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact-section h3 {
+    color: #5a3e2a;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-section a {
+    color: #a06e4e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #7a4a2c;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px 0;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+    }
+
+    .homely-section {
+        padding: 40px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.5em;
+    }
+
+    .craft-grid, .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .step-item {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .login-form-container {
+        padding: 30px;
+        margin: 20px auto;
+    }
+}
